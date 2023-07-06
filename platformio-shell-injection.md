@@ -49,4 +49,4 @@ def _gcc_preprocess(self, contents, out_file):
     atexit.register(_delete_file, tmp_path)
     return os.path.isfile(out_file)
 ```
-
+The `$CXX` represents the C++ compiler, along with other options and arguments. The `out_file` and `tmp_path` are formatted into the command string using the `format()` method.
